@@ -329,7 +329,7 @@ class _RockState extends State<Rock> {
                       minimumSize: Size(double.infinity,100),
                       shape: RoundedRectangleBorder(),
                       backgroundColor: Colors.transparent
-                    ),child: Text("Home",textAlign: TextAlign.center,style: TextStyle(color: Colors.black,fontSize:20,fontWeight: FontWeight.w500),)),
+                    ),child: Text("Home",textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize:20,fontWeight: FontWeight.w500),)),
                     Container(
                       height: 7,color: Colors.black,),
                     TextButton(onPressed: (){Navigator.pushNamed(context, '/count');},style: ElevatedButton.styleFrom(

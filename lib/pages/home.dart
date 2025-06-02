@@ -65,54 +65,59 @@ import 'package:flutter/services.dart';
             SizedBox(height: 50),
 
             /// Counter App Button
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Container(
-                  margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/count');
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: buttonColor.withOpacity(0.15),
-                      padding: EdgeInsets.all(20),
-                      minimumSize: Size(50, 100),
-                      shape: StadiumBorder()
-                    ),
-                    child: Text(
-                      "Counter App",
-                      style: TextStyle(
-                        fontSize: 23,
-                        fontWeight: FontWeight.w500,
-                        color: textColor,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/count');
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: buttonColor.withOpacity(0.15),
+                          padding: EdgeInsets.all(20),
+                          minimumSize: Size(50, 100),
+                          shape: StadiumBorder()
+                        ),
+                        child: Text(
+                          "Counter App",
+                          style: TextStyle(
+                            fontSize: 23,
+                            fontWeight: FontWeight.w500,
+                            color: textColor,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                ),
 
-                /// Calculator Button
-                Container(
-                  margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/calc');
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: buttonColor.withOpacity(0.15),
-                      padding: EdgeInsets.all(20),
-                      minimumSize: Size(50, 100),
-                      shape: StadiumBorder()
-                    ),
-                    child: Text(
-                      "Basic Calculator",
-                      style: TextStyle(
-                        fontSize: 23,
-                        fontWeight: FontWeight.w500,
-                        color: textColor,
+                    /// Calculator Button
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/calc');
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: buttonColor.withOpacity(0.15),
+                          padding: EdgeInsets.all(20),
+                          minimumSize: Size(50, 100),
+                          shape: StadiumBorder()
+                        ),
+                        child: Text(
+                          "Basic Calculator",
+                          style: TextStyle(
+                            fontSize: 23,
+                            fontWeight: FontWeight.w500,
+                            color: textColor,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
               ],
             ),

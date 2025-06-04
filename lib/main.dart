@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       routes:{
         '/count' :(context)=> Counter(),
         '/' :(context)=> House(),
-        '/calc':(context)=> Calculator(),
+        '/cal':(context)=> Calculator(),
         '/game 1': (context)=> Rock(),
 
       },
